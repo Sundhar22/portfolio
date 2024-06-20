@@ -1,0 +1,55 @@
+.scrollUp{
+    position: fixed;
+    bottom: -20%;
+    right: 2.5rem;
+    background-color: var(--title-color);
+    padding: 0.3rem .5rem;
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+}
+.scrollUp-icon{
+    font-size: 1.5rem;
+    color:var(--container-color);
+
+}
+.scrollUp:hover{
+    background-color: var(--title-color-dark);
+}
+.show-scroll{
+    bottom: 3rem;
+}
+
+
+
+  /*-------------- Breakpoints------------- */
+
+  /* larger devices */
+  @media screen and (max-width :992px){
+    .scrollUp{
+            right: 1.5rem;
+            padding: .25rem .4rem;
+    }
+    .scrollUp-icon{
+        font-size: 1.3rem;  
+    }
+  }
+
+  /* medium devices */
+  @media screen and (max-width :768px){
+    .show-scroll{
+        bottom: 4rem;
+    }
+
+  }
+
+
+  
+  /* smaller devices */
+  @media screen and (max-width :350px){
+    .show-scroll{
+        right: 1rem;
+    }
+  }
+
+

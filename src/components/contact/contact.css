@@ -1,0 +1,55 @@
+.contact__container{
+    justify-content: center;
+}
+
+.contact__form-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.contact__inputs{
+    border: 1.5px solid hsl(0,0%,45%) ;    
+    padding: .2rem .5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    
+}
+.contact__button{
+    justify-self: center;
+    height: 3.5rem;
+    padding: 1rem 2rem;
+}
+
+.contact__form input{
+    border: none;
+    outline: none;
+    height: 45px;
+    margin-left: 1rem;
+    width: 100%;
+    background-color: var(--body-color);
+}
+.contact__inputs-icon{
+    font-size: 1.5rem;
+    color: hsl(0,0%,45%) ;
+}
+
+.contact__message{
+    align-items: start;
+    padding: .5rem .5rem;
+}
+.contact__inputs-message{
+    border: none;
+    outline: none;
+    margin-left: 1rem;
+    width: 100%;    
+    background-color: var(--body-color);
+}
+
+@media screen and (max-width :576px){
+    .contact__form-container{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+}
